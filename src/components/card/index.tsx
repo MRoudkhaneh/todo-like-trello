@@ -49,7 +49,7 @@ export const Card: FC<PropsWithChildren<TCard>> = ({
                         value={title}
                         onChange={(e) => onChange(e.target.value)}
                         maxLength={128}
-                        className={Style.card_detail_tile}
+                        className={Style.card_detail_title}
                     />
                 </div>
                 <div className={Style.card_option}>

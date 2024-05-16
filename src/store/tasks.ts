@@ -5,7 +5,7 @@ class TasksStore {
     tasks: TTask[] = [
         {
             id: '1',
-            title: "Main Task",
+            title: "Main Task 1",
             order: 1,
             parentTaskId: null,
             expandable: true,
@@ -13,7 +13,7 @@ class TasksStore {
             subTask: [
                 {
                     id: '12',
-                    title: "Main Task",
+                    title: "Nested 1-1",
                     order: 1,
                     parentTaskId: '',
                     expandable: true,
@@ -21,7 +21,7 @@ class TasksStore {
                     subTask: [
                         {
                             id: '123',
-                            title: "Main Task",
+                            title: "Nested 1-1-1",
                             order: 1,
                             parentTaskId: '12',
                             expandable: false,
@@ -30,7 +30,7 @@ class TasksStore {
                         },
                         {
                             id: '124',
-                            title: "Main Task",
+                            title: "Nested 1-1-2",
                             order: 2,
                             parentTaskId: '12',
                             expandable: false,
@@ -43,7 +43,7 @@ class TasksStore {
         },
         {
             id: '2',
-            title: "Main Task",
+            title: "Main Task 2",
             order: 2,
             parentTaskId: null,
             expandable: false,
@@ -52,7 +52,7 @@ class TasksStore {
         },
         {
             id: '3',
-            title: "Main Task",
+            title: "Main Task 3",
             order: 3,
             parentTaskId: null,
             expandable: false,
