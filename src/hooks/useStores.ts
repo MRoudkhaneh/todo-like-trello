@@ -1,7 +1,9 @@
-import { MobXProviderContext } from "mobx-react";
-import React from "react";
+import {useContext} from "react";
+import {MobXProviderContext} from "mobx-react";
+import {RootStore} from "../store/type.task";
 
-function useStores() {
-  return React.useContext(MobXProviderContext);
+function useStores(): RootStore {
+    return useContext(MobXProviderContext) as RootStore;
 }
+
 export default useStores;
