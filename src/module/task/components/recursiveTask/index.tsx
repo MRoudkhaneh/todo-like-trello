@@ -17,7 +17,7 @@ export const RecursiveTask: FC<{
 
     return (
         <Card key={task.id}
-              title={task.id}
+              title={task.title}
               parentId={task.parentTaskId}
               onChange={(value) => {
                   onChangeTaskTitle(task.id, value)
