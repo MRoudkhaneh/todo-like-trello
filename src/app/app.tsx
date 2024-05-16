@@ -1,18 +1,7 @@
-import {observer} from "mobx-react";
-import {Card} from "../components";
-import {useState} from "react";
+import {TaskModule} from "../module";
 
-export const App = observer(() => {
-    const [expanded, setExpanded] = useState(false);
+export const App = () => {
     return (
-        <div className="App">
-            <Card expandable={true} expanded={true}>
-                <Card expandable={true} expanded={expanded}>
-                    <Card expandable={false}/>
-                </Card>
-                <Card expandable={false}/>
-            </Card>
-            <button onClick={() => setExpanded(!expanded)}>Toggle Expanded</button>
-        </div>
+        <TaskModule/>
     );
-});
+}

@@ -12,11 +12,13 @@ import {
 type TCard = {
     expandable: boolean
     expanded?: boolean
+    title: string
 }
 export const Card: FC<PropsWithChildren<TCard>> = ({
                                                        expandable,
                                                        expanded,
-                                                       children
+                                                       children,
+                                                       title
                                                    }) => {
     return (
         <div className={Style.card_wrapper}>
@@ -27,6 +29,7 @@ export const Card: FC<PropsWithChildren<TCard>> = ({
                     <input
                         placeholder='Title'
                         type='text'
+                        value={title}
                         maxLength={128}
                         className={Style.card_detail_tile}
                     />
