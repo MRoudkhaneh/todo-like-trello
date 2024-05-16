@@ -1,8 +1,8 @@
 export type TTask = {
-    id: number;
+    id: string;
     title: string;
     order: number;
-    parentTaskId: null | number;
+    parentTaskId: null | string;
     expanded: boolean
     expandable: boolean
     subTask?: TTask[]
